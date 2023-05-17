@@ -2,7 +2,7 @@ const moment = require('moment');
 const MessageTemplate = require('../models/MessageTemplate');
 const Guest = require('../models/Guest');
 const Company = require('../models/Company');
-const jsonBasePath = 'src/json';
+const jsonBasePath = 'server/json';
 const fs = require('fs');
 
 class MessageController {

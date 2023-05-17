@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Welcome",
+    "message": "{{greeting}} {{firstName}}, and welcome to {{companyName}}! Room {{roomNumber}} is now ready you. Enjoy your stay, and let us know if you need anything."
+  },
+  {
+    "id": 2,
+    "name": "Departure",
+    "message": "{{greeting}} {{firstName}}! I want to take the time to thank you for staying with us at {{companyName}}! Let us know if we can help you with anything in the future."
+  }
+]
