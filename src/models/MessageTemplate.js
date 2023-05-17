@@ -1,6 +1,6 @@
 class MessageTemplate {
-  constructor(content) {
-    this.content = content;
+  constructor(message) {
+    this.message = message;
   }
 }
 
