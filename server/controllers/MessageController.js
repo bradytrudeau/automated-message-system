@@ -2,11 +2,12 @@ const moment = require('moment');
 const MessageTemplate = require('../models/MessageTemplate');
 const Guest = require('../models/Guest');
 const Company = require('../models/Company');
-const jsonBasePath = 'src/json';
+const jsonBasePath = 'server/json';
 const fs = require('fs');
 
 class MessageController {
   loadMessageTemplates(templateId) {
+    // Pull message templates from json
     const templatePath = `${jsonBasePath}/MessageTemplates.json`;
     const templates = fs.readFileSync(templatePath);
     const parsedTemplates = JSON.parse(templates);
@@ -15,6 +16,7 @@ class MessageController {
   }
 
   loadGuests(guestId) {
+    // Pull guests from json
     const guestPath = `${jsonBasePath}/Guests.json`;
     const guests = fs.readFileSync(guestPath);
     const parsedGuests = JSON.parse(guests);
@@ -23,6 +25,7 @@ class MessageController {
   }
 
   loadCompanies(companyId) {
+    // Pull companies from json
     const companyPath = `${jsonBasePath}/Companies.json`;
     const companies = fs.readFileSync(companyPath);
     const parsedCompanies = JSON.parse(companies);
