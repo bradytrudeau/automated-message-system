@@ -19,6 +19,7 @@ router.post('/process-message', (req, res) => {
 
 router.get('/select-values', (req, res) => {
   try {
+    // Handle fetching of values for select elements
     const values = selectController.fetchSelectValues();
     res.send(values);
   } catch (error) {

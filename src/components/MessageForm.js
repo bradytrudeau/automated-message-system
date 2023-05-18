@@ -25,7 +25,7 @@ function MessageForm() {
       setCompanyId(response.data.companies[0].id);
       setTemplateId(response.data.messageTemplates[0].id);
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error fetching select values:', error);
       // Handle error
     }
   };
@@ -53,7 +53,7 @@ function MessageForm() {
       });
       setFinalMessage(response.data);
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error generating message:', error);
       // Handle error
     }
   };

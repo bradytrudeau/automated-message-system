@@ -3,7 +3,7 @@ const fs = require('fs');
 
 class SelectController {
   fetchSelectValues() {
-    // Read the JSON files
+    // Read the json files
     const companyPath = `${jsonBasePath}/Companies.json`;
     const guestPath = `${jsonBasePath}/Guests.json`;
     const templatePath = `${jsonBasePath}/MessageTemplates.json`;
